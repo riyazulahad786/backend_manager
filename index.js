@@ -5,7 +5,7 @@ require("dotenv").config();
 require("./models/db.js")
 const AuthRouter = require('./route/AuthRoutes.js');
 const taskRoutes = require('./route/taskRoutes.js'); 
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
